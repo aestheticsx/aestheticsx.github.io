@@ -1,5 +1,4 @@
-const updateDate = "08.03.2025";
-
+const update = "08.03.2025";
 const agreements = [
     "После успешной сделки возврат средств не осуществляется",
     "Исполнитель исправляет баги, но не несет ответственность за изменения на стороне сервера",
@@ -12,9 +11,7 @@ const agreements = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {  
-    document.querySelector(".back").addEventListener("click", () => {
-        window.location.href = "../index.html";
-    });
+    document.querySelector(".back").addEventListener("click", () => window.location.href = "../index.html");
 
     agreements.forEach(agreement => {
         const el = document.createElement("div");
@@ -22,5 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".agreements").appendChild(el);
     });
 
-    document.querySelector(".update").textContent = `Обновлено: ${updateDate}`;
+    document.querySelector(".update").textContent = `Обновлено: ${update}`;
 });

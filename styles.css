@@ -29,7 +29,7 @@ body {
     box-shadow: 0 0 50px rgba(119, 0, 255, 0.5);
     border: 2px solid rgba(111, 0, 255, 0.7);
     backdrop-filter: blur(20px);
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     animation: fadeIn 1s
 }
@@ -70,11 +70,32 @@ body {
     transform: scale(1.2)
 }
 
+.reviews {
+    outline: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.85);
+    background: transparent;
+    box-shadow: 0 0 50px rgba(119, 0, 255, 0.5);
+    border: 2px solid rgba(111, 0, 255, 0.7);
+    backdrop-filter: blur(20px);
+    animation: fadeIn 1s;
+    transition: transform .25s, box-shadow .25s
+}
+
+.reviews:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgba(119, 0, 255)    
+}
+
 .executor {
     position: absolute;
     outline: none;
     cursor: pointer;
-    margin-top: 520px;
+    margin-top: 590px;
     border-radius: 15px;
     padding: 15px;
     font-size: 20px;

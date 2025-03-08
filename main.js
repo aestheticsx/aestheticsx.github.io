@@ -5,18 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
     
     contacts.forEach(contact => {
-        contact.el.addEventListener("click", () => {            
-            window.open(contact.url, "_blank");
-            console.log(`Open contact -> ${contact.url}`);
-        });        
+        contact.el.addEventListener("click", () => window.open(contact.url, "_blank"));        
     });
 
-    document.querySelector(".executor").addEventListener("click", () => {
-        window.open("https://www.blast.hk/threads/232210/", "_blank");
-        console.log("Open executor link");
-    });
+    document.querySelector(".executor").addEventListener("click", () => window.open("https://www.blast.hk/threads/232210/", "_blank"));
 
-    document.querySelector(".agreement").addEventListener("click", () => {
-        window.location.href = "agreement/index.html";
-    });
+    document.querySelector(".agreement").addEventListener("click", () => window.location.href = "agreement/index.html");
+
+    document.querySelector(".reviews").addEventListener("click", () => window.location.href = "reviews/index.html");
 });
