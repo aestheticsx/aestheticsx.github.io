@@ -3,7 +3,7 @@ const reviews = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    reviews.forEach(review => {
+    reviews.reverse().forEach(review => {
         const el = document.createElement("div");
         el.className = "review";
 
