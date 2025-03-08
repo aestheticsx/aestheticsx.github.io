@@ -1,5 +1,5 @@
 const reviews = [
-    { name: "dreamweaver", text: "Отзывов пока что нету =(" }
+    { name: "dreamweaver", text: "Отзывов пока что нету =(", avatar: true }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         el.className = "review";
 
         const avatarEl = document.createElement("img");
-        avatarEl.src = `../images/reviews/${review.name}.png`;
+        avatarEl.src = review.avatar ? `../images/reviews/${review.name}.png` : "../images/reviews/none.png";
         avatarEl.className = "avatar";
 
         const nameContainer = document.createElement("div");
