@@ -39,8 +39,8 @@ body {
 }
 
 .card .avatar img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     box-shadow: 0 0 50px rgba(119, 0, 255, 0.5);
     border: 3px solid rgba(111, 0, 255, 0.7)
@@ -48,7 +48,7 @@ body {
 
 .card .name {
     margin: 10px 0;
-    font-size: 30px
+    font-size: 32px
 }
 
 .card .languages-title {
@@ -62,7 +62,7 @@ body {
 .card .languages .icon {
     width: 40px;
     height: 40px;
-    margin: 0 10px;
+    margin: 0 6px;
     transition: transform .25s
 }
 
@@ -73,6 +73,7 @@ body {
 .reviews {
     outline: none;
     cursor: pointer;
+    margin-top: 10px;
     width: 200px;
     border-radius: 15px;
     padding: 15px;
