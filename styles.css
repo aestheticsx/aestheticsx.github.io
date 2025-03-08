@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif  
+}
+
+body {
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 3px 14px rgba(0, 0, 0, 0.3);
+    background: url(images/background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card {    
+    border-radius: 15px;
+    background: transparent;
+    box-shadow: 0 0 50px rgba(119, 0, 255, 0.5);
+    border: 2px solid rgba(111, 0, 255, 0.7);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s
+}
+
+.card .avatar {
+    margin-bottom: 20px
+}
+
+.card .avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(119, 0, 255, 0.5);
+    border: 3px solid rgba(111, 0, 255, 0.7)
+}
+
+.card .name {
+    margin: 10px 0;
+    font-size: 30px
+}
+
+.card .languages-title {
+    margin-top: 25px
+}
+
+.card .languages {
+    margin: 20px 0
+}
+
+.card .languages .icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform .25s
+}
+
+.card .languages .icon:hover {
+    transform: scale(1.2)
+}
+
+.executor {
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    margin-top: 520px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.85);
+    background: transparent;
+    box-shadow: 0 0 50px rgba(119, 0, 255, 0.5);
+    border: 2px solid rgba(111, 0, 255, 0.7);
+    backdrop-filter: blur(20px);
+    animation: fadeIn 1s;
+    transition: transform .25s, box-shadow .25s
+}
+
+.executor:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgba(119, 0, 255)    
+}
+
+.contacts {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 15px;
+    background: transparent;
+    box-shadow: 0 0 50px rgba(119, 0, 255, 0.5);
+    border: 2px solid rgba(111, 0, 255, 0.7);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    text-align: center;
+    animation: fadeIn 1s
+}
+
+.contacts .icon {
+    position: relative;
+    cursor: pointer;
+    top: 3px;
+    right: 1px;
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+    transition: transform .25s
+}
+
+.contacts .icon:hover {
+    transform: scale(1.15)    
+}
+
+.agreement {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    animation: fadeIn 1s
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
