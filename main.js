@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector(".agreement").addEventListener("click", () => {
-        alert("Soon");
+        window.location.href = "agreement/index.html";
     });
 });
