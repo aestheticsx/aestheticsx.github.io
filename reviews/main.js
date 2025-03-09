@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const nameEl = document.createElement("div");
         nameEl.className = "name";
         nameEl.textContent = review.name;
+        nameEl.onclick = () => window.open(review.profile, "_blank");
 
         nameContainer.appendChild(avatarEl);
         nameContainer.appendChild(nameEl);

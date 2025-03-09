@@ -84,9 +84,16 @@ body {
 }
 
 .review .name {
+    cursor: pointer;
     font-size: 21px;
     font-weight: 500;
-    margin-left: 9px
+    margin-left: 9px;
+    transition: text-decoration .25s, text-shadow .25s
+}
+
+.review .name:hover {
+    text-shadow: 0 0 30px rgba(119, 0, 255);
+    text-decoration: underline
 }
 
 .review .text {
