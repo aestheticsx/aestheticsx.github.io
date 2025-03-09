@@ -1,5 +1,5 @@
 const reviews = [
-    { name: "dreamweaver", text: "Отзывов пока что нету =(", avatar: true }
+    { name: "jonasic1126", text: "quality scripts and very quickly written without bugs 👍", avatar: false }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
