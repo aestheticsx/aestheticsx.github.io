@@ -25,10 +25,10 @@ body {
     user-select: none
 }
 
-.reviews-container {
+.reviews {
     max-height: 600px;
     overflow-y: auto;
-    width: 500px;
+    width: 550px;
     padding: 15px;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -39,12 +39,12 @@ body {
     backdrop-filter: blur(20px)
 }
 
-.reviews-container::-webkit-scrollbar {
+.reviews::-webkit-scrollbar {
     width: 0;
     background: transparent
 }
 
-.reviews-container {
+.reviews {
     -ms-overflow-style: none;
     scrollbar-width: none
 }
@@ -113,6 +113,17 @@ body {
 .back:hover {
     transform: scale(1.1);
     box-shadow: 0 0 50px rgba(119, 0, 255)    
+}
+
+.where {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    animation: fadeIn 1s
 }
 
 @keyframes fadeIn {

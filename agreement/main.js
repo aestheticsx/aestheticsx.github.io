@@ -1,27 +1,18 @@
-const update = "08.03.2025";
-const agreements = [
-    "После успешной сделки возврат средств не осуществляется",
-    "Исполнитель исправляет баги, но не несет ответственность за изменения на стороне сервера",
-    "Отменить заказ после начала работы - нельзя, а так же средства не возвращаются",
-    "Вы не можете присваивать авторство скрипта/плагина себе, автором является исполнитель",
-    "Заказ может быть не выполнен без объяснения причин, с возвратом средств",
-    "Исполнитель имеет право предоставить заказ без исходного кода",
-    "В случае каких-либо недочетов исполнитель исправит их без доп. платы в течении 24 часов после получения скрипта/плагина",
-    "Правки не описанные в Т/З будут выполнены за дополнительную плату",
-    "Ошибки обнаруженные в скрипте/плагине исправляются в течении 24 часов после получения скрипта/плагина",
-    "Если нету возможности исправить ошибки обнаруженные в скрипте/плагине - делаю возврат средств",
-    "Исполнитель не несет ответственности за действия связанные с аккаунтами заказчика",
-    "Если скрипт/плагин сделан бесплатно, исполнитель имеет право опубликовать его в открытый доступ"
-];
+document.addEventListener("DOMContentLoaded", async () => {  
+    let config;
 
-document.addEventListener("DOMContentLoaded", () => {  
-    document.querySelector(".back").addEventListener("click", () => window.location.href = "../index.html");
+    const response = await fetch("../data.json");
+    if (!response.ok) throw new Error("Network response was not ok");
+    config = await response.json();
+    if (!config) return;
 
-    agreements.forEach(agreement => {
+    config.agreement.agreements.forEach(agreement => {
         const el = document.createElement("div");
         el.textContent = `· ${agreement}`;
         document.querySelector(".agreements").appendChild(el);
     });
 
-    document.querySelector(".update").textContent = `Обновлено: ${update}`;
+    document.querySelector(".update").textContent = `Обновлено: ${config.agreement.update}`;
+
+    document.querySelector(".back").addEventListener("click", () => window.location.href = "../index.html");
 });

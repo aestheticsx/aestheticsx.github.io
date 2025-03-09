@@ -1,10 +1,12 @@
-const reviews = [
-    { name: "dreamweaver", text: "Отзвыв берутся отсюда -> https://www.blast.hk/threads/232210/", avatar: true },
-    { name: "jonasic1126", text: "quality scripts and very quickly written without bugs 👍", avatar: false }
-];
+document.addEventListener("DOMContentLoaded", async () => {
+    let config;
 
-document.addEventListener("DOMContentLoaded", () => {
-    reviews.reverse().forEach(review => {
+    const response = await fetch("../data.json");
+    if (!response.ok) throw new Error("Network response was not ok");
+    config = await response.json();
+    if (!config) return;
+
+    config.review.reviews.reverse().forEach(review => {
         const el = document.createElement("div");
         el.className = "review";
 
@@ -32,8 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
         textEl.textContent = review.text;
         el.appendChild(textEl);
 
-        document.querySelector(".reviews-container").appendChild(el);
+        document.querySelector(".reviews").appendChild(el);
     });
+
+    document.querySelector(".where").addEventListener("click", () => window.open(config.review.where, "_blank"));
 
     document.querySelector(".back").addEventListener("click", () => window.location.href = "../index.html");
 });
