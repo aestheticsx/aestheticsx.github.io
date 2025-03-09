@@ -33,7 +33,8 @@
     "review": {
         "where": "https://www.blast.hk/threads/232210/",
         "reviews": [
-            { "name": "jonasic1126", "text": "quality scripts and very quickly written without bugs 👍", "avatar": false }
+            { "name": "jonasic1126", "text": "quality scripts and very quickly written without bugs 👍", "avatar": false },
+            { "name": "overlucky", "text": "хорошо сделал, всё работает )", "avatar": true }
         ]
     }
 }
