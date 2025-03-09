@@ -1,4 +1,5 @@
 const reviews = [
+    { name: "dreamweaver", text: "Отзвыв берутся отсюда -> https://www.blast.hk/threads/232210/", avatar: true },
     { name: "jonasic1126", text: "quality scripts and very quickly written without bugs 👍", avatar: false }
 ];
 
