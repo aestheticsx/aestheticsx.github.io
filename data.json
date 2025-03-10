@@ -33,9 +33,30 @@
     "review": {
         "where": "https://www.blast.hk/threads/232210/",
         "reviews": [
-            { "name": "jonasic1126", "text": "quality scripts and very quickly written without bugs 👍", "profile": "https://www.blast.hk/members/562756/", "avatar": false },
-            { "name": "overlucky", "text": "хорошо сделал, всё работает )", "profile": "https://www.blast.hk/members/546888/", "avatar": true },
-            { "name": "Kirill567329", "text": "Все отлично скрипт работает, огромное спасибо!)", "profile": "https://www.blast.hk/members/570028/", "avatar": false }
+            {
+                "name": "jonasic1126",
+                "text": "quality scripts and very quickly written without bugs 👍",
+                "link": "https://www.blast.hk/threads/232210/post-1590979",
+                "profile": "https://www.blast.hk/members/562756/",
+                "date": "09.03.2025",
+                "avatar": false
+            },
+            {
+                "name": "overlucky",
+                "text": "хорошо сделал, всё работает )",
+                "link": "https://www.blast.hk/threads/232210/post-1591011",
+                "profile": "https://www.blast.hk/members/546888/",
+                "date": "09.03.2025",
+                "avatar": true
+            },
+            {
+                "name": "Kirill567329",
+                "text": "Все отлично скрипт работает, огромное спасибо!)",
+                "link": "https://www.blast.hk/threads/232210/post-1591184",
+                "profile": "https://www.blast.hk/members/570028/",
+                "date": "10.03.2025",
+                "avatar": false
+            }
         ]
     }
 }

@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     config.review.reviews.reverse().forEach(review => {
         const el = document.createElement("div");
         el.className = "review";
+        el.onclick = () => window.open(review.link, "_blank");
 
         const avatarEl = document.createElement("img");
         avatarEl.src = review.avatar ? `../images/reviews/${review.name}.png` : "../images/reviews/none.png";
@@ -22,8 +23,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         nameEl.textContent = review.name;
         nameEl.onclick = () => window.open(review.profile, "_blank");
 
+        const dateEl = document.createElement("div");
+        dateEl.className = "date";
+        dateEl.textContent = review.date;
+
         nameContainer.appendChild(avatarEl);
         nameContainer.appendChild(nameEl);
+        nameContainer.appendChild(dateEl);
         el.appendChild(nameContainer);
 
         const separator = document.createElement("div");

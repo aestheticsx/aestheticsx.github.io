@@ -50,6 +50,7 @@ body {
 }
 
 .review {    
+    cursor: pointer;
     border-radius: 15px;
     background: transparent;
     box-shadow: 0 0 50px rgba(119, 0, 255, 0.5);
@@ -58,7 +59,13 @@ body {
     padding: 17px;
     text-align: center;
     margin: 10px;
-    animation: fadeIn 1s
+    animation: fadeIn 1s;
+    transition: box-shadow .25s, transform .2s
+}
+
+.review:hover {
+    box-shadow: 0 0 50px rgba(119, 0, 255, 0.8);
+    transform: scale(1.01)
 }
 
 .name-container {
@@ -94,6 +101,12 @@ body {
 .review .name:hover {
     text-shadow: 0 0 30px rgba(119, 0, 255);
     text-decoration: underline
+}
+
+.review .date {
+    color: rgb(196, 196, 196);
+    position: absolute;
+    right: 35px
 }
 
 .review .text {
