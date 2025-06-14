@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadReviews() {
     try {
-      const response = await fetch("reviews.json");
+      const response = await fetch("../reviews.json");
       if (!response.ok)
         throw new Error("Ошибка загрузки отзывов");
 
